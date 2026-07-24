@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="mg">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hifandray aminay - Apex Digital</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-slate-50 text-slate-800 flex flex-col min-h-screen">
+  <header class="bg-white border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 flex items-center justify-between h-20">
+      <a href="index.html" class="flex items-center space-x-3">
+        <div class="w-10 h-10 bg-blue-600 rounded-lg text-white font-black flex items-center justify-center">A</div>
+        <span class="text-xl font-bold text-slate-900">ApexDigital</span>
+      </a>
+      <a href="index.html" class="text-sm font-semibold text-blue-600 hover:underline">← Ahitana</a>
+    </div>
+  </header>
+
+  <!-- OPTION 10: CONTACT FORM & MAP -->
+  <main class="max-w-7xl mx-auto px-4 py-16 flex-1 grid grid-cols-1 lg:grid-cols-2 gap-12">
+    <div class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm space-y-6">
+      <h2 class="text-2xl font-extrabold text-slate-900">Alefaso ny Hafatrao</h2>
+      <form id="public-contact-form" class="space-y-4">
+        <div>
+          <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Anarana sy Fanampiny</label>
+          <input type="text" id="sender-name" required class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-blue-600 outline-none text-sm">
+        </div>
+        <div>
+          <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Imailaka (Email)</label>
+          <input type="email" id="sender-email" required class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-blue-600 outline-none text-sm">
+        </div>
+        <div>
+          <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Hafatra</label>
+          <textarea id="sender-message" rows="4" required class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-blue-600 outline-none text-sm"></textarea>
+        </div>
+        <button type="submit" class="w-full py-3.5 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-xl transition shadow-lg shadow-blue-500/20">
+          Lasa ny Hafatra
+        </button>
+      </form>
+      <div id="form-alert" class="hidden p-4 rounded-xl text-xs font-semibold"></div>
+    </div>
+
+    <div class="space-y-6">
+      <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm space-y-4">
+        <h3 class="text-lg font-bold text-slate-900">Toerana sy Fifandraisana</h3>
+        <p class="text-sm text-slate-600"><i class="fa-solid fa-location-dot text-blue-600 mr-2"></i> Antananarivo 101, Madagasikara</p>
+        <p class="text-sm text-slate-600"><i class="fa-solid fa-phone text-blue-600 mr-2"></i> +261 34 00 000 00</p>
+        <p class="text-sm text-slate-600"><i class="fa-solid fa-envelope text-blue-600 mr-2"></i> contact@apexdigital.mg</p>
+      </div>
+      <div class="rounded-2xl overflow-hidden shadow-sm border border-slate-200 h-[280px]">
+        <iframe class="w-full h-full border-0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15098.81056586027!2d47.5255!3d-18.8792!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x21f07e158d3d9cb9%3A0x62955f2f5348821d!2sAntananarivo!5e0!3m2!1sfr!2smg!4v1680000000000!5m2!1sfr!2smg" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </div>
+  </main>
+  <script type="module" src="app.js"></script>
+</body>
+</html>
